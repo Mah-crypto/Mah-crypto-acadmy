@@ -1,0 +1,17 @@
+body {
+  background-color: #111;
+  color: gold;
+  font-family: Tahoma, Arial, sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
