@@ -1,15 +1,125 @@
-<!DOCTYPE html>
-<html lang="fa">
+<!DOCTYPE html><html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>آکادمی Mah</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Mah Crypto Academy Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: linear-gradient(135deg, #1c1f2b, #2e2f4f);
+      color: white;
+    }
+    header {
+      background-color: #21243b;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+    header h1 {
+      font-size: 1.5rem;
+      color: gold;
+    }
+    .container {
+      display: flex;
+      height: calc(100vh - 80px);
+    }
+    .sidebar-left, .sidebar-right {
+      width: 20%;
+      padding: 1rem;
+      background-color: #282a3f;
+      overflow-y: auto;
+    }
+    .main {
+      flex-grow: 1;
+      padding: 1rem;
+      background-color: #1e2030;
+    }
+    .section {
+      background-color: #2c2e4a;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: inset 0 0 10px #000;
+    }
+    .section h2 {
+      margin-top: 0;
+      color: gold;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>🎓 Mah Crypto Academy</h1>
+    <div>
+      <button>🌙 تم شب/روز</button>
+      <button>👤 پروفایل</button>
+    </div>
+  </header>
   <div class="container">
-    <h1>🎓 به آکادمی Mah خوش آمدید</h1>
-    <p>داشبورد هوشمند آموزش و تحلیل ارز دیجیتال</p>
+    <aside class="sidebar-left">
+      <div class="section">
+        <h2>📊 تحلیل تکنیکال</h2>
+        <p>MACD, RSI و اندیکاتورها</p>
+      </div>
+      <div class="section">
+        <h2>⏱ تایم فریم</h2>
+        <p>لحظه‌ای تا سالانه</p>
+      </div>
+      <div class="section">
+        <h2>💱 قیمت زنده</h2>
+        <iframe src="https://www.coingecko.com/en/widgets/live_crypto_price_widget?locale=en"></iframe>
+      </div>
+    </aside>
+    <main class="main">
+      <div class="section">
+        <h2>نمودار قیمت زنده</h2>
+        <p>نمایش نمودار ارزهای انتخابی</p>
+      </div>
+      <div class="section">
+        <h2>⭐ ارزهای محبوب</h2>
+        <p>مشاهده و ستاره‌دار کردن</p>
+      </div>
+    </main>
+    <aside class="sidebar-right">
+      <div class="section">
+        <h2>📝 دفترچه یادداشت</h2>
+        <p>یادداشت‌های مهم تحلیل</p>
+      </div>
+      <div class="section">
+        <h2>🧮 ماشین حساب</h2>
+        <p>محاسبه سود و ضرر</p>
+      </div>
+      <div class="section">
+        <h2>💬 پشتیبانی</h2>
+        <p>چت آنلاین ۲۴ ساعته</p>
+      </div>
+      <div class="section">
+        <h2>🌐 فرهنگی</h2>
+        <p>
+          <strong>زبان‌ها:</strong> فارسی، انگلیسی، عربی، فرانسوی، آلمانی، ترکی، اسپانیایی، روسی، چینی، ژاپنی، هندی، کره‌ای، ایتالیایی، پرتغالی، هلندی<br>
+          <strong>ضرب‌المثل‌ها:</strong> <br>
+          - "گر صبر کنی ز غوره حلوا سازی" (ایران)<br>
+          - "Actions speak louder than words" (انگلیس)<br>
+          - "Der Apfel fällt nicht weit vom Stamm" (آلمان)<br>
+          <strong>سخنان کلیدی موفقیت:</strong> <br>
+          - "موفقیت یعنی رفتن از شکستی به شکست دیگر بدون از دست دادن اشتیاق" - چرچیل<br>
+          - "شانس با تلاش به‌دست می‌آید" - توماس ادیسون<br>
+          <strong>کتاب‌ها:</strong> <br>
+          - "Cryptoassets" - Chris Burniske<br>
+          - "The Bitcoin Standard" - Saifedean Ammous<br>
+          - "Rich Dad Poor Dad" - Robert Kiyosaki
+        </p>
+      </div>
+    </aside>
   </div>
 </body>
 </html>
